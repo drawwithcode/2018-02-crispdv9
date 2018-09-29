@@ -5,9 +5,9 @@ function preload(){
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
-  background(50);
+  background(0);
   angleMode(DEGREES);
-  frameRate(1000)
+  frameRate(2000)
 }
 
 function draw() {
