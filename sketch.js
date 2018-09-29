@@ -34,20 +34,6 @@ function draw() {
     if (frameCount == 500)
     noLoop();
     pop()
-    push()
-    var radius=(100)
-    stroke(300)
-    strokeWeight(0)
-    translate(width/2,height/2);
-    rotate(frameCount*2)
-    noFill()
-    strokeWeight(1)
-    stroke(250)
-    line(0,0,0,-radius*sin(frameCount*3),radius*cos(frameCount*3));
-    line(0,0,0,radius*sin(frameCount*3),-radius*cos(frameCount*3));
-    if(frameCount==175)
-    noLoop();
-    pop()
     noFill()
     push()
     translate(width/2,height/2);
@@ -56,6 +42,20 @@ function draw() {
     stroke(lerpColor(color('#0afff5'), color('#a31264'), frameCount/120));
     ellipse(0,0,50,20);
     if (frameCount == 300);
+    pop()
+    push()
+    var radius=(100)
+    stroke(300)
+    strokeWeight(0)
+    translate(width/2,height/2);
+    rotate(frameCount*1)
+    noFill()
+    strokeWeight(1)
+    stroke(250)
+    line(0,0,0,-radius*sin(frameCount*1),radius*cos(frameCount*1));
+    line(0,0,0,radius*sin(frameCount*1),-radius*cos(frameCount*1));
+    if(frameCount==175)
+    noLoop();
     pop()
 
 
