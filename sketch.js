@@ -7,7 +7,7 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
   angleMode(DEGREES);
-  frameRate(2000)
+  frameRate(300)
 }
 
 function draw() {
@@ -20,7 +20,7 @@ function draw() {
     noFill()
     translate(width/2,height/2)
     rotate(frameCount*8)
-    line(width/3,height/3,0,0)
+    line(width/4,height/4,0,0)
     if (frameCount == 300)
     noLoop();
     pop()
@@ -31,7 +31,7 @@ function draw() {
     rotate(frameCount*4);
     strokeWeight(0.8);
     line(1,0,1,-radius*sin(frameCount*6,),radius*cos(frameCount*2,));
-    if (frameCount == 500)
+    if (frameCount == 300)
     noLoop();
     pop()
     noFill()
