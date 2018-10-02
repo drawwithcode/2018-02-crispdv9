@@ -36,12 +36,12 @@ function draw() {
         rotate(frameCount*1)
         noFill()
         strokeWeight(1)
-        stroke(250)
-        line(0,0,0,-radius*sin(frameCount*1),radius*cos(frameCount*1));
-        line(0,0,0,radius*sin(frameCount*1),-radius*cos(frameCount*1));
-        line(0,0,0,-radius*cos(frameCount*1),radius*sin(frameCount*1));
-        line(0,0,0,radius*cos(frameCount*1),-radius*sin(frameCount*1));
-        if(frameCount==181)
+        stroke(500)
+        line(0,0,1,-radius*sin(frameCount*1),radius*cos(frameCount*2));
+        line(0,0,0,radius*sin(frameCount*1),-radius*cos(frameCount*2));
+        line(0,0,-1,-radius*cos(frameCount*1),radius*sin(frameCount*2));
+        line(0,0,-0,radius*cos(frameCount*1),-radius*sin(frameCount*2));
+        if(frameCount==180)
         noLoop();
         pop();
 
@@ -49,7 +49,7 @@ function draw() {
     push();
     var radius = (300);
     translate(width/2,height/2);
-    stroke(lerpColor(color('#0afff5'), color('#1b1464'), frameCount/250));
+    stroke(lerpColor(color('#0afff5'), color('#1b1464'), frameCount/600));
     rotate(frameCount*4);
     strokeWeight(1);
     line(1,0,1,-radius*sin(frameCount*6,),radius*cos(frameCount*2,));
@@ -61,8 +61,8 @@ function draw() {
     push();
     noFill()
     translate(width/2,height/2);
-    rotate(frameCount*3);
-    strokeWeight(1)
+    rotate(frameCount*5);
+    strokeWeight(2)
     stroke(lerpColor(color('#0afff5'), color('#a31264'), frameCount/120));
     ellipse(0,0,50,20);
     if (frameCount == 300);
